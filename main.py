@@ -20,8 +20,7 @@ colors = pd.read_csv("data/colors.csv")
 # Uncomment if needed to inspect.
 # print(colors.is_trans.value_counts())
 
-# Challenge: Find the number of transparent colors where is_trans == 't' 
-# versus the number of opaque colors where is_trans == 'f'.
+# Challenge: Find the number of transparent colors where is_trans == 't'  versus the number of opaque colors where is_trans == 'f'.
 # Uncomment to explore.
 # transparent_colors = colors[colors.is_trans == 't'].shape[0]
 # opaque_colors = colors[colors.is_trans == 'f'].shape[0]
@@ -134,3 +133,4 @@ plt.xlabel('Theme Name', fontsize=14)
 plt.bar(merged_df['name'][:10], merged_df['set_count'][:10], color='red')
 plt.title("Top 10 Themes with the Most Sets")
 plt.show()
+
